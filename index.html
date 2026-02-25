@@ -7,8 +7,9 @@
 </head>
 <body style=background-color:powderblue;>
 <h1>NEBC Lookout Rock Ice Controller Status</h1>
-<br>Web page updated: 2026-02-24 19:14:53
+Web page updated: 2026-02-24 19:46:53
 <br><br>
+<h3>Valves</h3>
 <style>td,th {text-align: center;}</style>
 <table>
 <thead><tr><th style="width:150px"></th><th>Valve state</th></tr></thead>
@@ -19,39 +20,55 @@
 </tbody>
 </table>
 <br>
+<h3>Temperatures</h3>
 <table>
 <thead>
 <tr><th style="width:150px"></th><th>Temp &#8457;</th></tr>
 </thead>
 <tbody style="td:nth-child(1) {width: 1000px}">
-<tr><th>Outside air</th><td>25.0</td></tr>
+<tr><th>Outside air</th><td>24.2</td></tr>
 <tr><th>Hayden furnace room</th><td>212.0</td></tr>
-<tr><th>RPi CPU</th><td>110.2</td></tr>
+<tr><th>RPi CPU</th><td>111.2</td></tr>
 </tbody>
 </table>
 <br>
+<h3>Configuration parameters</h3>
 <table>
 <thead>
 <tr><th style="width:300px"></th><th>Parameter value</th></tr>
 </thead>
 <tbody style="td:nth-child(1) {width: 1000px}">
-<tr><th>Water on when temp <=</th><td>24.5 &#8457;</td></tr>
-<tr><th>Water off when temp >=</th><td>25.5 &#8457;</td></tr>
-<tr><th>Water on time</th><td>90 sec</td></tr>
+<tr><th>Water on when temp <=</th><td>27.5 &#8457;</td></tr>
+<tr><th>Water off when temp >=</th><td>28.5 &#8457;</td></tr>
+<tr><th>Water on time</th><td>2700 sec</td></tr>
 <tr><th>Water on increase per degree below threshold</th><td>240 sec</td></tr>
-<tr><th>Min time between sprinklings</th><td>150 sec</td></tr>
-<tr><th>Drain after sprinkle time</th><td>60 sec</td></tr>
-<tr><th>Periodic trickle drain time</th><td>30 sec</td></tr>
-<tr><th>Time between periodic trickle drains</th><td>120 sec</td></tr>
-<tr><th>Min time from drain close to sprinkle open</th><td>5 sec</td></tr>
+<tr><th>Min time between sprinklings</th><td>1800 sec</td></tr>
+<tr><th>Drain after sprinkle time</th><td>900 sec</td></tr>
+<tr><th>Periodic trickle drain time</th><td>90 sec</td></tr>
+<tr><th>Time between periodic trickle drains</th><td>3600 sec</td></tr>
+<tr><th>Min time from drain close to sprinkle open</th><td>6 sec</td></tr>
 <tr><th>Min time from sprinkle close to drain open</th><td>5 sec</td></tr>
 </tbody>
 </table>
 <br>
-<br>Time since last reboot: 30days 08:45:16
-<br>Time since program start: 0days 00:00:03
+<h3>Program and system details</h3>
+<table>
+<thead>
+<tr><th style="width:300px"></th><th>Value</th></tr>
+</thead>
+<tbody style="td:nth-child(1) {width: 1000px}">
+<tr><th>Time since last reboot</th><td>30days 09:17:15</td></tr>
+<tr><th>Time since program start</th><td>0days 00:00:02</td></tr>
+<tr><th>Sensor (temp outside Hayden)<td>212.0 &#8457;</td></tr>
+<tr><th>Sensor correction</th><td>5.0 &#8457;</td></tr>
+<tr><th>Sensor tuned and corrected<td>212.0 &#8457;</td></tr>
+<tr><th>National Weather Service<td>24.0 &#8457;</td></tr>
+<tr><th>WeatherAPI<td>26.1 &#8457;</td></tr>
+<tr><th>OpenWeatherMap<td>24.2 &#8457;</td></tr>
+</tbody>
+</table>
+<br>
 <br><br>TBD
-<br>Detail section with all temp sources?
 <br>7 day history table
 </body>
 </html>
