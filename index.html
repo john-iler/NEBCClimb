@@ -6,16 +6,15 @@
 <title> NEBC Ice Status </title>
 </head>
 <body style=background-color:powderblue;>
-<h1>Ignore - testing. NEBC Lookout Rock Ice Controller Status</h1>
-Web page updated: 2026-02-26 16:27:44 (report program problem if more than 10 minutes ago)
+<h1>Ignore - testing #2. NEBC Lookout Rock Ice Controller Status</h1>
+Web page updated: 2026-02-26 16:28:24 (report program problem if more than 10 minutes ago)
 <br><br>
 <style>td,th {text-align: center;}</style>
 <style>caption {text-align:left;font-weight:bold;}</style>
 <hr>
 <table>
 <caption>Valves</caption>
-<thead><tr><th style="width:150px"></th><th>Valve state</th></tr></thead>
-<tbody style="td:nth-child(1) {width: 1000px}">
+<thead><tr><th style="width:300px">Valve</th><th>Status</th></tr></thead>
 <tr><th>Sprinkle</th><td>closed</td></tr>
 <tr><th>Drain</th><td>closed</td></tr>
 <tr><th>Control</th><td>regular program</td></tr>
@@ -25,8 +24,7 @@ Web page updated: 2026-02-26 16:27:44 (report program problem if more than 10 mi
 <hr>
 <table>
 <caption>Temperatures</caption>
-<thead><tr><th style="width:150px"></th><th>Temp &#8457;</th></tr></thead>
-<tbody style="td:nth-child(1) {width: 1000px}">
+<thead><tr><th style="width:300px">Location</th><th>Temp &#8457;</th></tr></thead>
 <tr><th>Outside air</th><td>43.0</td></tr>
 <tr><th>Hayden furnace room</th><td>212.0 Hayden furnace is off!</td></tr>
 <tr><th>RPi CPU</th><td>103.5</td></tr>
@@ -35,40 +33,36 @@ Web page updated: 2026-02-26 16:27:44 (report program problem if more than 10 mi
 <br>
 <hr>
 <table>
-<caption>Statistics noon-to-noon starting at specified dates</caption>
-<thead><tr><th style="width:300px"></th><th>Temp<br>min &#8457</th><th>Temp<br>max &#8457</th><th>Sprinkle<br>total time</th></tr></thead>
-<tbody style="td:nth-child(1) {width: 1200px}">
-<tr><th>2026-02-26 12:00:00</th><td>38.6</td><td>44.5</td><td>00:00:00</td></tr>
-<tr><th>2026-02-25 12:00:00</th><td>23.5</td><td>39.2</td><td>01:46:54</td></tr>
+<caption>History</caption>
+<thead><tr><th style="width:250px">24 hr period starting</th><th>Temp<br>min &#8457</th><th>Temp<br>max &#8457</th><th>Sprinkle<br>total time</th></tr></thead>
+<tr><th>2026-02-26 12:00:00</th><td>42.0</td><td>44.1</td><td>00:00:00</td></tr>
 </tbody>
 </table>
 <br>
 <hr>
 <table>
-<caption>Configuration parameteres</caption>
-<thead><tr><th style="width:300px"></th><th>Parameter value</th></tr></thead>
-<tbody style="td:nth-child(1) {width: 1200px}">
+<caption>Configuration</caption>
+<thead><tr><th style="width:300px">Parameter</th><th>Value</th></tr></thead>
 <tr><th>Hayden furnace alert when temp <=</th><td>213.0 &#8457;</td></tr>
 <tr><th>Water on when temp <=</th><td>27.5 &#8457;</td></tr>
 <tr><th>Water off when temp >=</th><td>28.5 &#8457;</td></tr>
 <tr><th>Water on time</th><td>00:45:00</td></tr>
-<tr><th>Water on increase per degree below 27.5</th><td>00:04:00</td></tr>
+<tr><th>Water on increase per degree < 27.5</th><td>00:04:00</td></tr>
 <tr><th>Min time between sprinklings</th><td>00:30:00</td></tr>
 <tr><th>Drain after sprinkle time</th><td>00:15:00</td></tr>
 <tr><th>Periodic trickle drain time</th><td>00:01:30</td></tr>
 <tr><th>Time between periodic trickle drains</th><td>01:00:00</td></tr>
-<tr><th>Min time from drain close to sprinkle open</th><td>00:00:06</td></tr>
-<tr><th>Min time from sprinkle close to drain open</th><td>00:00:05</td></tr>
+<tr><th>Min time drain close->sprinkle open</th><td>00:00:06</td></tr>
+<tr><th>Min time sprinkle close->drain open</th><td>00:00:05</td></tr>
 </tbody>
 </table>
 <br>
 <hr>
 <table>
-<caption>Program and system details</caption>
-<thead><tr><th style="width:300px"></th><th>Value</th></tr></thead>
-<tbody style="td:nth-child(1) {width: 1200px}">
-<tr><th>Time since last reboot</th><td>32days 05:58:06</td></tr>
-<tr><th>Time since program start</th><td>18:48:54</td></tr>
+<caption>System details</caption>
+<thead><tr><th style="width:300px">Item</th><th>Value</th></tr></thead>
+<tr><th>Time since last reboot</th><td>32days 05:58:47</td></tr>
+<tr><th>Time since program start</th><td>00:58:54</td></tr>
 <tr><th>Sensor (temp outside Hayden)<td>212.0 &#8457;</td></tr>
 <tr><th>Sensor correction</th><td>5.0 &#8457;</td></tr>
 <tr><th>Sensor tuned and corrected<td>212.0 &#8457;</td></tr>
